@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: local('Montserrat-Bold'), url(../../fonts/Montserrat/Montserrat-Bold.ttf) format('woff');
+  }
+
+@font-face {
+    font-family: 'Montserrat-Thin';
+    src: local('Montserrat-Thin'), url(../../fonts/Montserrat/Montserrat-Thin.ttf) format('woff');
+}
+
+.principal {
+    background: #1D5297;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 10px 30px 10px;
+    color: white;
+}
+
+.left-side {
+    
+}
+
+.center-part {
+    
+    text-align: center;
+    min-width: 600px;
+    max-width: 600px;
+}
+
+.center-part h1 {
+    font-family: 'Montserrat-Bold';
+    font-size: 24px    
+}
+
+.center-part h2 {
+    font-family: 'Montserrat-Thin';
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.center-part h3 {
+    font-family: 'Montserrat-Thin';
+    font-size: 16px    
+}
+
+.right-side {
+    
+}
+
+.seta {
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+}
+
+.seta img{
+
+}
+
+@media(max-width: 1024px){
+    .left-side {
+        display: none;
+    }
+    .right-side {
+        display: none;
+    }
+}

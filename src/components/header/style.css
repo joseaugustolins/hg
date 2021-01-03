@@ -1,0 +1,13 @@
+.header {
+    width: 100%;
+    background: #FFFFFF;
+    height: 55px;
+    display: flex;
+    padding-left: 20%;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        padding-left: 6%;
+    }
+}
