@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: local('Montserrat-Bold'), url(./fonts/Montserrat/Montserrat-Bold.ttf) format('woff');
+  }
+
+@font-face {
+    font-family: 'Montserrat-Thin';
+    src: local('Montserrat-Thin'), url(./fonts/Montserrat/Montserrat-Thin.ttf) format('woff');
+}

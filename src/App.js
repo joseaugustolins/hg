@@ -1,6 +1,7 @@
 import BoxList from "./components/box/BoxList";
 import Header from "./components/header/Header";
 import MiddleLayer from "./components/middlelayer/MiddleLayer";
+import { PeriodicityContextProvider } from "./components/periodicity/PeriodicityContext";
 
 function App() {
   return (
@@ -8,9 +9,9 @@ function App() {
       <div>
         <Header/>
         <MiddleLayer/>
-      </div>
-      <div>
-        <BoxList/>
+        <PeriodicityContextProvider>
+          <BoxList/>
+        </PeriodicityContextProvider>
       </div>
     </div>
   );

@@ -1,0 +1,60 @@
+
+.button-box {
+    font-size: larger;
+    background: #4480C5 0% 0% no-repeat padding-box;
+    border-radius: 26px;
+    opacity: 1;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-box-button {
+    text-align: center;
+    background: #4480C5 0% 0% no-repeat padding-box;
+    border: none;
+    outline: none;
+    font: normal normal bold 22px/27px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.button-box-yellow {
+    font-size: larger;
+    background: #FF6A17 0% 0% no-repeat padding-box;
+    border-radius: 26px;
+    opacity: 1;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-box-yellow-button {
+    text-align: center;
+    background: #FF6A17 0% 0% no-repeat padding-box;
+    border: none;
+    outline: none;
+    font: normal normal bold 22px/27px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+@media(max-width: 1024px){
+    .button-box {
+        font-size: small;
+        
+        width: 150px;
+    }
+    .button-box button {
+        font: normal normal bold 18px Montserrat;
+    }
+}

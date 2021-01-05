@@ -1,0 +1,102 @@
+.lista {
+    background-color: #eff5fa;
+    display: flex;
+    justify-content: center;
+}
+
+.box-default {
+    background-color:white;
+    font: normal normal normal 14px Montserrat;
+    width: 330px;
+    height: 700px;
+    
+    margin: 10px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.box-top {
+    margin-top: 20px;
+    text-align: center;
+    font: normal normal bold 26px/26px Montserrat;
+    letter-spacing: 0px;
+    color: #1D5297;
+    opacity: 1;
+}
+
+.box-middle {
+    text-align: center;
+    font: normal normal normal 15px/20px Montserrat;
+    letter-spacing: 0px;
+    align-items: center;
+    color: #333333;
+
+}
+
+.box-bottom {
+    text-align: left;
+    padding-left: 15px;
+    opacity: 1;
+    font: normal normal normal 16px/32px Montserrat;
+    letter-spacing: 0px;
+    color: #333333;
+}
+
+
+.box-selected {
+    background-color: yellow;
+}
+
+.line {
+    border: none;
+    height: 2px;
+    color: #f6faff; 
+    background-color: #f6faff;
+    
+}
+
+.economize {
+    text-align: left;
+    font: normal normal normal 14px/18px Montserrat;
+    letter-spacing: 0px;
+    color: #1D5297;
+    padding: 10px 0px 10px 40px;
+    opacity: 1;
+}
+
+.valorpormes {
+    text-align: center;
+    font: normal normal normal 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #1D5297;
+}
+
+.valor {
+    font: normal normal bold 32px Montserrat;
+}
+
+.off40 {
+    background: #51C99C 0% 0% no-repeat padding-box;
+    border-radius: 224px;
+    opacity: 1;
+    text-align: left;
+    font: normal normal bold 14px/18px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    padding: 3px 5px 3px 5px;
+    text-transform: uppercase;
+}
+
+.periodicity-text {
+    margin-top: 10px; 
+}
+
+
+@media(max-width: 1024px){
+    .box-default {
+        font: normal normal normal 12px Montserrat;
+        width: 310px;
+        text-align: center;
+        border-radius: 4px;
+    }    
+}

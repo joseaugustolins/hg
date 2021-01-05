@@ -1,0 +1,49 @@
+.periodicity-main {
+    width: 100%;
+    text-align: center;
+    background-color:  #eff5fa;
+    font: normal normal normal 16px/23px Montserrat;
+    letter-spacing: 0px;
+    color: #16437E;
+    opacity: 1;
+}
+
+
+.periodicity-itens-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.periodicity-itens {
+    background-color:  white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 225 0px;
+    height: 36px;
+    text-justify: center;
+    text-align: center;
+    box-shadow: 0px 2px 4px #4480C570;
+    border: 1px solid #4480C5;
+    border-radius: 20px;
+}
+
+
+.periodicity-itens label{
+    padding: 8px;
+}
+
+.periodicity-radio-selected {
+    align-items: center;
+    border-radius: 21px;
+    font: 16px/23px MontserratRegular;
+    color: #16437E;
+    background: #4480C5;
+    font-family: MontserratBold;
+    color: #FFFFFF;
+}
+
+
+
+
