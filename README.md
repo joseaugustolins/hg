@@ -1,7 +1,7 @@
 # Overview
 
 Webpage with informations about hosting plan.
-## Pre-requisits
+## Prerequisites
 
 Node (version >=12.13)  | NPM (version >= 6.12) | GIT
 
@@ -18,7 +18,9 @@ create a .env file below root directory, in the same level from src and public. 
 `npm start`
 
 `npm test` to test
-To access, on your browser type http://localhost:3000
+
+
+To access the page, on your browser type http://localhost:3000
 
 ### `Libraries used`
 axios
