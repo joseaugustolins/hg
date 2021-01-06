@@ -12,7 +12,7 @@ Node (version >=12.13)  | NPM (version >= 6.12) | GIT
 
 create a .env file below root directory, in the same level from src and public. Type the following content: 
 
-REACT_APP_HOST=http://localhost:3000
+REACT_APP_URL=http://localhost:3000
 
 REACT_APP_BACK=https://2891637c-8ab7-4a84-906b-a98465726f85.mock.pstmn.io
 
