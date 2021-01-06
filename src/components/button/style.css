@@ -51,10 +51,37 @@
 @media(max-width: 1024px){
     .button-box {
         font-size: small;
-        
         width: 150px;
     }
     .button-box button {
         font: normal normal bold 18px Montserrat;
+    }
+
+    .button-box-yellow {
+        font-size: small;
+        width: 150px;
+    }
+
+    .button-box-yellow-button {
+        font: normal normal bold 18px Montserrat;
+    }
+    
+    
+}
+
+@media(max-width: 500px){
+    .button-box {
+        font-size: small;
+    }
+    .button-box button {
+        font: normal normal bold 10px Montserrat;
+    }
+
+    .button-box-yellow {
+        font-size: small;
+    }
+
+    .button-box-yellow-button {
+        font: normal normal bold 10px Montserrat;
     }
 }

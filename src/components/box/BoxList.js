@@ -15,18 +15,18 @@ const BoxList = () => {
         "product_335"
     ]
 
-    useEffect( () => {
+    useEffect(() => {
         load()
     })
-    
+
     const [periodicitySelected] = useContext(PeriodicityContext)
     const [productList, setProductList] = useState([])
-    
 
-    const load = async  () => {
+
+    const load = async () => {
         const data = await axios.get(`${process.env.REACT_APP_BACK}/prices`)
         var listaProdutos = []
-        productsSelecteds.forEach( prod => {
+        productsSelecteds.forEach(prod => {
             listaProdutos.push(data.data.shared.products[prod])
         })
         setProductList(listaProdutos);
@@ -36,11 +36,11 @@ const BoxList = () => {
     return (
         <div>
             <div>
-                <Periodicity/>
+                <Periodicity />
             </div>
             <div className="lista">
                 {productList && productList.map(product => (
-                   <Box id={product.id} key={product.id} nome={product.name} plan={product.cycle[periodicitySelected]} cycle={periodicitySelected}/>
+                    <Box id={product.id} key={product.id} nome={product.name} plan={product.cycle[periodicitySelected]} cycle={periodicitySelected} />
                 ))}
             </div>
         </div>

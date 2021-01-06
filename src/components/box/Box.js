@@ -10,13 +10,13 @@ const Box = ({ id, nome, plan, cycle }) => {
         return (Math.round(value * 100) / 100).toString().replace(".", ",")
     }
 
-    const getItens = (id) => {
+    function getItens(id) {
         const data = PlanItens.find(element => element.id = id);
         return data.itens
     }
 
     return (
-        
+
         <div className="box-default">
             <div className="box-top">
                 <img width="40" height="40" src={`${process.env.REACT_APP_URL}/assets/p${id}.svg`} alt="Imagem do Plano" />
@@ -25,10 +25,10 @@ const Box = ({ id, nome, plan, cycle }) => {
             <hr className="line" />
             <div className="box-middle">
                 <p>
-                    <s>&#82;&#36;{getValueFormated(plan.priceOrder)}</s>
+                    <s>&#82;&#36;<span id="valorTotal">{getValueFormated(plan.priceOrder)}</span></s>&nbsp;
                     <b>&#82;&#36;{getValueFormated(plan.priceOrder * 60 / 100)}</b><br />
                     equivalente a
-                    <div className="valorpormes">&#82;&#36; <span className="valor">{getValueFormated(plan.priceOrder * 60 / 100 / plan.months)}</span>/mês*</div>
+                    <span className="valorpormes">&#82;&#36; <span id="valorComDesconto" className="valor">{getValueFormated(plan.priceOrder * 60 / 100 / plan.months)}</span>/mês*</span>
                 </p>
                 <ButtonBox id={id} cycle={cycle} onClick={(e) => {
                     e.preventDefault();
@@ -41,12 +41,11 @@ const Box = ({ id, nome, plan, cycle }) => {
             <hr className="line" />
 
             <div className="box-bottom">
-                {getItens(id).map(itens => (
-                    <p>
+                {getItens(id).map((itens, i) => (
+                    <p key={i}>
                         {itens}
                     </p>
                 ))}
-
             </div>
         </div>
 

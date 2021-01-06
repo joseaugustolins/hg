@@ -1,6 +1,6 @@
-import React, {createContext, useState} from 'react'
+import React, { createContext, useState } from 'react'
 
-const PeriodicityContext = createContext([{}, () => {}]);
+const PeriodicityContext = createContext([{}, () => { }]);
 
 
 const PeriodicityContextProvider = (props) => {
@@ -13,4 +13,4 @@ const PeriodicityContextProvider = (props) => {
     )
 }
 
-export {PeriodicityContextProvider, PeriodicityContext}
+export { PeriodicityContextProvider, PeriodicityContext }

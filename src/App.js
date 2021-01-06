@@ -7,10 +7,10 @@ function App() {
   return (
     <div>
       <div>
-        <Header/>
-        <MiddleLayer/>
+        <Header />
+        <MiddleLayer />
         <PeriodicityContextProvider>
-          <BoxList/>
+          <BoxList />
         </PeriodicityContextProvider>
       </div>
     </div>

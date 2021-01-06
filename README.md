@@ -17,6 +17,7 @@ create a .env file below root directory, in the same level from src and public. 
 
 `npm start`
 
+`npm test` to test
 To access, on your browser type http://localhost:3000
 
 ### `Libraries used`
